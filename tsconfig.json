@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "jsx": "react-native",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "sourceMap": true,
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "webworker"
+    ],
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app": ["./app"],
+      "@components": ["./app/components"],
+      "@config": ["./app/config"],
+      "@models": ["./app/models"],
+      "@navigation": ["./app/navigation"],
+      "@services": ["./app/services"],
+      "@screens": ["./app/screens"],
+      "@theme": ["./app/theme"],
+      "@utils": ["./app/utils"],
+      "@translate": ["./app/i18n"],
+      "@constants": ["./app/constants"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./bin",
+    "./app",
+    "./test",
+    "./storybook",
+    "./typings",
+    "./index.js",
+    "./App.tsx",
+    "./jest.config.js",
+    "./wdio.config.js",
+    "./custom.d.ts",
+  ]
+}
